@@ -52,10 +52,10 @@ function draw () {
         // Background *** DRY (Do Not Repeat Yourself) lul
 
     // *** Asteroid ***
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.2+x, canvasHeight*.45+i, 40, 40, Math.PI, 0, 360);
-    secondCTX.fillStyle = "#5C4033";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2+x, canvasHeight*.45+i, 40, 40, Math.PI, 0, 360);
+    ctx.fillStyle = "#5C4033";
+    ctx.fill();
 
     secondCTX.beginPath();
     secondCTX.ellipse(canvasWidth*.85, canvasHeight*.7+i, 40, 40, Math.PI, 0, 360);
