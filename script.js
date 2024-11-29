@@ -57,72 +57,147 @@ function draw () {
     ctx.fillStyle = "#5C4033";
     ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.85, canvasHeight*.7+i, 40, 40, Math.PI, 0, 360);
-    secondCTX.fillStyle = "#5C4033";
-    secondCTX.fill();
+    // Background *** DRY (Do Not Repeat Yourself) lul
+
+    // *** Asteroid ***
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2+x, canvasHeight*.45+y, 40, 40, Math.PI, 0, 360);
+    ctx.fillStyle = "#5C4033";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.85, canvasHeight*.7+y, 40, 40, Math.PI, 0, 360);
+    ctx.fillStyle = "#5C4033";
+    ctx.fill();
 
 
     // *** "Written in the Stars" ***
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.1, canvasHeight*.55+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.1, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.9, canvasHeight*.5+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.9, canvasHeight*.5+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.3, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.3, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.2, canvasHeight*.65+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2, canvasHeight*.65+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.76, canvasHeight*.7+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.76, canvasHeight*.7+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.2, canvasHeight*.35+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.3, canvasHeight*.35+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.3, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.6, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.6, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.15, canvasHeight*.85+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.15, canvasHeight*.85+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.75, canvasHeight*.55+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.75, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.6, canvasHeight*.25+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.6, canvasHeight*.25+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-    secondCTX.beginPath();
-    secondCTX.ellipse(canvasWidth*.8, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
-    secondCTX.fillStyle = "white";
-    secondCTX.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.8, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.85, canvasHeight*.7+i, 40, 40, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "#5C4033";
+    // secondCTX.fill();
+
+
+    // // *** "Written in the Stars" ***
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.1, canvasHeight*.55+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.9, canvasHeight*.5+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.3, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.2, canvasHeight*.65+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.76, canvasHeight*.7+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.2, canvasHeight*.35+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.3, canvasHeight*.35+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.6, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.15, canvasHeight*.85+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.75, canvasHeight*.55+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.6, canvasHeight*.25+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
+
+    // secondCTX.beginPath();
+    // secondCTX.ellipse(canvasWidth*.8, canvasHeight*.45+i, 4, 4, Math.PI, 0, 360);
+    // secondCTX.fillStyle = "white";
+    // secondCTX.fill();
 
     y = i;
     // console.log(y);
@@ -135,80 +210,80 @@ function draw () {
 
 
 
-// // Background *** DRY (Do Not Repeat Yourself) lul
+// Background *** DRY (Do Not Repeat Yourself) lul
 
-//     // *** Asteroid ***
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.2+x, canvasHeight*.45+y, 40, 40, Math.PI, 0, 360);
-//     ctx.fillStyle = "#5C4033";
-//     ctx.fill();
+    // *** Asteroid ***
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2+x, canvasHeight*.45+y, 40, 40, Math.PI, 0, 360);
+    ctx.fillStyle = "#5C4033";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.85, canvasHeight*.7+y, 40, 40, Math.PI, 0, 360);
-//     ctx.fillStyle = "#5C4033";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.85, canvasHeight*.7+y, 40, 40, Math.PI, 0, 360);
+    ctx.fillStyle = "#5C4033";
+    ctx.fill();
 
 
-//     // *** "Written in the Stars" ***
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.1, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    // *** "Written in the Stars" ***
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.1, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.9, canvasHeight*.5+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.9, canvasHeight*.5+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.3, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.3, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.2, canvasHeight*.65+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2, canvasHeight*.65+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.76, canvasHeight*.7+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.76, canvasHeight*.7+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.2, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.2, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.3, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.3, canvasHeight*.35+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.6, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.6, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.15, canvasHeight*.85+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.15, canvasHeight*.85+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.75, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.75, canvasHeight*.55+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.6, canvasHeight*.25+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.6, canvasHeight*.25+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
-//     ctx.beginPath();
-//     ctx.ellipse(canvasWidth*.8, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
-//     ctx.fillStyle = "white";
-//     ctx.fill();
+    ctx.beginPath();
+    ctx.ellipse(canvasWidth*.8, canvasHeight*.45+y, 4, 4, Math.PI, 0, 360);
+    ctx.fillStyle = "white";
+    ctx.fill();
 
 
 
